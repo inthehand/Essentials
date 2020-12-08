@@ -73,7 +73,7 @@ namespace Xamarin.Essentials
         public BarometerData Reading { get; }
     }
 
-    public readonly struct BarometerData : IEquatable<BarometerData>
+    public readonly partial struct BarometerData : IEquatable<BarometerData>
     {
         public BarometerData(double pressure) =>
             PressureInHectopascals = pressure;
